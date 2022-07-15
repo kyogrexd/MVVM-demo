@@ -6,31 +6,45 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/tvCase1"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/edContent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/btn_gray"
-        android:padding="8dp"
-        android:text="Case 1"
-        android:textColor="@color/black"
-        android:textSize="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tvCase2"
+        android:id="@+id/tvSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:textColor="@color/black"
+        android:background="@drawable/btn_gray"
+        android:padding="8dp"
+        android:text="Save"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/edContent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edContent" />
+
+    <TextView
+        android:id="@+id/tvResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:padding="8dp"
-        android:text="Case 2"
+        android:text="Result"
         android:textSize="20dp"
         android:textColor="@color/black"
         android:background="@drawable/btn_gray"
-        app:layout_constraintEnd_toEndOf="@+id/tvCase1"
-        app:layout_constraintStart_toStartOf="@+id/tvCase1"
-        app:layout_constraintTop_toBottomOf="@+id/tvCase1" />
+        app:layout_constraintEnd_toEndOf="@+id/tvSave"
+        app:layout_constraintStart_toStartOf="@+id/tvSave"
+        app:layout_constraintTop_toBottomOf="@+id/tvSave" />
 </androidx.constraintlayout.widget.ConstraintLayout>

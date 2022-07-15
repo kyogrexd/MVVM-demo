@@ -18,6 +18,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".CaseOneActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ResultActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".CaseSecActivity"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>
